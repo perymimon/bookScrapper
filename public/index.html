@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="bookScrapper">
+<head>
+    <meta charset="UTF-8"/>
+    <title>book scrapper</title>
+    <script src="/bower_components/angularjs/angular.js"></script>
+    <script>
+        angular.module('bookScrapper',[])
+            .controller('rootCtrl',function rootCtrl($scope,$http){
+                    $scope.jar = 43;
+
+                    $scope.getBookInforamtion = getBookInforamtion;
+
+                    function getBookInforamtion() {
+                        $http.get('/getBookInfo', {
+                            params: {
+                                url: $scope.bookUrl
+                            }
+                        });
+                    }
+
+
+            });
+    </script>
+</head>
+<body ng-controller="rootCtrl">
+    <h1>book scrapper</h1>
+    <input type="text" ng-model="bookUrl" ng-click="getBookInformation()"/>
+ <br/>
+{{jar}}
+</body>
+</html>
