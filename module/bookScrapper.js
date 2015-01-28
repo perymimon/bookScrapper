@@ -24,6 +24,28 @@ var _ = require('lodash');
             pages:'body > div > div > div:nth-child(6) > table > tbody > tr > td:nth-child(2) > div > div > b:nth-child(3)',/*text*/
             category:'body > div > div > div:nth-child(6) > table > tbody > tr > td:nth-child(2) > div > div > a:nth-child(6)',/*text*/
             translation:'body > div > div > div:nth-child(6) > table > tbody > tr > td:nth-child(2) > div > div > a:nth-child(4)'
+        },
+        'www.steimatzky.co.il':{
+            description:'#ctl00_ctl00_MasterContentPlaceHolder_InternalContentPlaceHolder_ItemControl_lblSummary',
+            bookCover:'#ctl00_ctl00_MasterContentPlaceHolder_InternalContentPlaceHolder_ItemControl_ItemVisualDisplay1_imgMainCover',
+            author:'',
+            bookName:'#ctl00_ctl00_MasterContentPlaceHolder_InternalContentPlaceHolder_ItemControl_lblBookName',
+            publisher:'',
+            year:'',
+            pages:'',
+            category:'',
+            translation:''
+        },
+        'demo':{
+            description:'',
+            bookCover:'',
+            author:'',
+            bookName:'',
+            publisher:'',
+            year:'',
+            pages:'',
+            category:'',
+            translation:''
         }
     };
 
